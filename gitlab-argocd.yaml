@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://charts.gitlab.io
+    repoURL: https://charts.gitlab.io           # Use official GitLab Helm repo
     chart: gitlab
     targetRevision: 7.7.0
     helm:
       valueFiles:
-        - gitlab-values.yaml
+        - https://raw.githubusercontent.com/PerumalrajGithub/gitlab-argo-deploy/main/gitlab-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: gitlab
@@ -19,4 +19,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-
