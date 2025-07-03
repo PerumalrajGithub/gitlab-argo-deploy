@@ -3,7 +3,6 @@ global:
 
   hosts:
     domain: gitlab.example.com
-    externalIP: a4a53e32c53b44052a77b412eed28880-1079592521.us-east-1.elb.amazonaws.com
 
   ingress:
     enabled: true
@@ -14,3 +13,7 @@ global:
 
 certmanager:
   install: false
+
+gitlab:
+  upgradeCheck:
+    enabled: false
