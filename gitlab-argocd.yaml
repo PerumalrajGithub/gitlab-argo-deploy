@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://charts.gitlab.io           # Use official GitLab Helm repo
+    repoURL: https://charts.gitlab.io
     chart: gitlab
     targetRevision: 7.7.0
     helm:
